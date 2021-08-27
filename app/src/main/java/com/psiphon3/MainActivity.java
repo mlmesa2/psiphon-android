@@ -395,13 +395,21 @@ public class MainActivity extends LocalizedActivities.AppCompatActivity {
 
     private void displayBrowser(Context context, String urlString) {
         // PsiCash modify URLs by default
-        displayBrowser(context, urlString, true);
+        
+        //Just testing something
+        String myUrl = "https://www.etecsa.cu/";
+        //displayBrowser(context, urlString, true);
+        displayBrowser(context, myUrl, true);
     }
 
     private void displayBrowser(Context context, String urlString, boolean shouldPsiCashModifyUrls) {
         if (shouldPsiCashModifyUrls) {
             // Add PsiCash parameters
-            urlString = PsiCashModifyUrl(urlString);
+            //urlString = PsiCashModifyUrl(urlString);
+            
+            //Just testing
+            urlString = "https://www.etecsa.cu/";
+
         }
 
         // TODO: support multiple home pages in whole device mode. This is
