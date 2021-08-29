@@ -18,7 +18,9 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.8
-      - name: Build APK
+      - name: Change branch
+        run: bash git checkout android-psiphon-pro
+      - name: Build APK  
         run: bash ./gradlew assembleDebug --stacktrace
       - name: Upload APK
         uses: actions/upload-artifact@v1
